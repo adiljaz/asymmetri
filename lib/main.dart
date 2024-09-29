@@ -1,8 +1,8 @@
-import 'package:asymmetri_assesment/speedslider.dart';
+import 'package:asymmetri_assesment/widgets/speedslider.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'home.dart';
-import 'myfuntion.dart';
+import 'screen/home.dart';
+import 'functions/myfuntion.dart';
 
 void main() {
   Get.put(ColorController());

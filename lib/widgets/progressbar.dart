@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'speedslider.dart';
-import 'mydata.dart';
+import '../data/mydata.dart';
 
 class ProgressBars extends StatelessWidget {
   @override
@@ -25,7 +25,7 @@ class ProgressBars extends StatelessWidget {
                     return Expanded(
                       child: Container(
                         height: 20,
-                        margin: EdgeInsets.symmetric(horizontal: 2),
+                        margin: const EdgeInsets.symmetric(horizontal: 2),
                         decoration: BoxDecoration(
                           border:
                               Border.all(color: controller.selectedColor.value),
@@ -37,15 +37,9 @@ class ProgressBars extends StatelessWidget {
                             value: controller.getProgressWidth(globalIndex),
                             backgroundColor: Colors.transparent,
                             valueColor: AlwaysStoppedAnimation<Color>(
-                              LinearGradient(
-                                
-                                colors: [
-                                  MyData.gradientStartColor.value,
-                                  MyData.gradientEndColor.value,
-                                ],
-                                begin: Alignment.centerLeft,
-                                end: Alignment.centerRight,
-                              ).colors[0], 
+
+                              MyData.gradientStartColor.value,
+                                 
                             ),
                           ),
                         ),

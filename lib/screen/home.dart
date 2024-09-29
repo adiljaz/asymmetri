@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'colorselect.dart';
-import 'counter.dart';
-import 'progressbar.dart';
-import 'mydata.dart';
-import 'speedslider.dart';
+import '../widgets/colorselect.dart';
+import '../widgets/counter.dart';
+import '../widgets/progressbar.dart';
+import '../data/mydata.dart';
+import '../widgets/speedslider.dart';
 
 class HomePage extends StatelessWidget {
  

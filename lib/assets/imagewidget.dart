@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'mydata.dart';
+import '../data/mydata.dart';
 
 class AsymmetriLogo extends StatelessWidget {
   @override

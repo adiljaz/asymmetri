@@ -1,7 +1,7 @@
-import 'package:asymmetri_assesment/speedslider.dart';
+import 'package:asymmetri_assesment/widgets/speedslider.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'myfuntion.dart';
+import '../functions/myfuntion.dart';
 
 class ItemCounter extends StatelessWidget {
   @override
@@ -13,13 +13,18 @@ class ItemCounter extends StatelessWidget {
           children: [
             TextField(
               decoration: InputDecoration(
+                
                 labelText: 'Total Items',
                 labelStyle: TextStyle(color: controller.selectedColor.value),
                 focusedBorder: OutlineInputBorder(
+                   borderRadius: BorderRadius.circular(15),
                   borderSide: BorderSide(color: controller.selectedColor.value),
                 ),
                 enabledBorder: OutlineInputBorder(
-                  borderSide: BorderSide(color: controller.selectedColor.value.withOpacity(0.5)),
+                  borderRadius: BorderRadius.circular(15),
+                  borderSide: BorderSide(
+                    
+                      color: controller.selectedColor.value.withOpacity(0.5)),
                 ),
               ),
               keyboardType: TextInputType.number,
@@ -35,10 +40,13 @@ class ItemCounter extends StatelessWidget {
                 labelText: 'Items in Line',
                 labelStyle: TextStyle(color: controller.selectedColor.value),
                 focusedBorder: OutlineInputBorder(
+                   borderRadius: BorderRadius.circular(15),
                   borderSide: BorderSide(color: controller.selectedColor.value),
                 ),
                 enabledBorder: OutlineInputBorder(
-                  borderSide: BorderSide(color: controller.selectedColor.value.withOpacity(0.5)),
+                   borderRadius: BorderRadius.circular(15),
+                  borderSide: BorderSide(
+                      color: controller.selectedColor.value.withOpacity(0.5)),
                 ),
               ),
               keyboardType: TextInputType.number,
@@ -52,7 +60,8 @@ class ItemCounter extends StatelessWidget {
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                Text('Reverse', style: TextStyle(color: controller.selectedColor.value)),
+                Text('Reverse',
+                    style: TextStyle(color: controller.selectedColor.value)),
                 Switch(
                   value: controller.isReversed.value,
                   onChanged: (value) {

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'myfuntion.dart';
-import 'mydata.dart';
+import '../functions/myfuntion.dart';
+import '../data/mydata.dart';
 
 class ColorSelector extends StatelessWidget {
   @override
@@ -11,7 +11,7 @@ class ColorSelector extends StatelessWidget {
         return Container(
           decoration: BoxDecoration(
             color: Color.fromARGB(255, 255, 255, 255),
-            borderRadius: BorderRadius.circular(8),
+            borderRadius: BorderRadius.circular(13), 
             boxShadow: [
               BoxShadow(
                 color: Colors.black.withOpacity(0.05),

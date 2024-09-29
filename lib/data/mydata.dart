@@ -1,8 +1,5 @@
-
-
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-
 
 class MyData {
   static final List<String> colors = ['Purple', 'Blue', 'Red', 'Green', 'Yellow'];

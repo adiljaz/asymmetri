@@ -1,7 +1,7 @@
 import 'package:get/get.dart';
 import 'package:flutter/material.dart';
-import 'mydata.dart';
-import 'speedslider.dart';
+import '../data/mydata.dart';
+import '../widgets/speedslider.dart';
 
 class MyFunctions {
   static void updateColor(String colorName) {
